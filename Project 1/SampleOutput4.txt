@@ -1,0 +1,98 @@
+CS 4200 Project 1
+Select: 
+[1] Random Puzzle
+[2] Manual input Puzzle
+[3] Exit
+
+>> 2
+
+Please enter numbers from 1 to 8, and 0 as the empty tile.
+Square 0: 1
+Square 1: 2
+Square 2: 5
+Square 3: 3
+Square 4: 4
+Square 5: 8
+Square 6: 6
+Square 7: 7
+Square 8: 0
+ 
+The puzzle you enter is 
+
+1   2   5   
+3   4   8   
+6   7   0   
+
+-------------------------------
+Solving with Manhattan distance
+
+Initial 
+
+1   2   5   
+3   4   8   
+6   7   0   
+
+Step 1
+
+1   2   5   
+3   4   0   
+6   7   8   
+
+Step 2
+
+1   2   0   
+3   4   5   
+6   7   8   
+
+Step 3
+
+1   0   2   
+3   4   5   
+6   7   8   
+
+Step 4
+
+0   1   2   
+3   4   5   
+6   7   8   
+ 
+| Heuristic function: Manhattan distance | Search Cost: 7 | Time: 238000 ns |
+-------------------------------
+Solving with Hamming distance
+
+Initial 
+
+1   2   5   
+3   4   8   
+6   7   0   
+
+Step 1
+
+1   2   5   
+3   4   0   
+6   7   8   
+
+Step 2
+
+1   2   0   
+3   4   5   
+6   7   8   
+
+Step 3
+
+1   0   2   
+3   4   5   
+6   7   8   
+
+Step 4
+
+0   1   2   
+3   4   5   
+6   7   8   
+ 
+| Heuristic function: Hamming distance | Search Cost: 12 | Time: 67500 ns |
+-------------------------------
+Enter [0] return to main menu 
+Enter [1] to [9] to continue use manual input 
+
+>> 
